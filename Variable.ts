@@ -25,3 +25,12 @@ let tup:[number,string];
 tup = [1,"Sachin"];
 console.log(tup);
 console.log(typeof(tup));
+//Imporatant point is that we can not assign the different value to different type but we can change the 
+//value or reassign the value.
+
+//tup[0] = "sachin";-- we can not do this coz we know ts is static type lg and we can not assign the string to number .
+//Although we can change or reassign the value --
+
+tup[0]=3;
+tup[1]="Sachin Gupta";
+console.log(tup);
