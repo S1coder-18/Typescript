@@ -55,4 +55,8 @@ console.log(user);
 var tuple2;
 tuple2 = [1, "Alice"]; // Correct
 tuple2 = [2, "Bob", true]; // Correct
-// tuple = ["Alice", 1]; // Error: Type 'string' is not assignable to type 'number'.
+function createUser(id, name, isActive) {
+    return [id, name, isActive];
+}
+var User = createUser(1, "Sachin Gupta", true);
+console.log(User);

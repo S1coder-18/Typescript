@@ -82,3 +82,15 @@ let tuple2: [id: number, name: string, active?: boolean];
 tuple2 = [1, "Alice"]; // Correct
 tuple2 = [2, "Bob", true]; // Correct
 // tuple = ["Alice", 1]; // Error: Type 'string' is not assignable to type 'number'.
+
+
+//Function that returns the tuple ---
+
+type UserInfo = [number, string, boolean];
+
+function createUser(id:number,name:string,isActive:boolean):UserInfo{
+    return [id,name,isActive];
+}
+
+let User:UserInfo = createUser(1,"Sachin Gupta",true);
+console.log(User);
