@@ -87,3 +87,21 @@ console.log(days.SAT);
 //we can access in both ways---
 let day:days = days.SAT;
 console.log(day);
+
+//Example we are taking---
+
+enum OrderStatus{
+    PENDING ="Pending",
+    DELIVERED = "Delivered",
+    DISPATCH = "Dispatch"
+}
+
+let Order:{ title:string; price:number; Status:OrderStatus; date:Date;}
+Order = {
+    title:"Oppo A54",
+    price:12000.43,
+    Status:OrderStatus.DISPATCH,
+    date:new Date()
+
+};
+console.log(Order);
